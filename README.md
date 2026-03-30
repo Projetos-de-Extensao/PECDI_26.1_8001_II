@@ -1,5 +1,6 @@
 # Projeto Front-End
-
+- Grupo: Gabriel Valle, Guilherme, Antonni, Gabriel, Artur e Bernardo
+  
 ## Sobre 
 Disciplina que planeja o desenvolvimento de um Front-End a partir de uma demanda externa. 
 
