@@ -39,7 +39,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 2. Como será o processo para cadastrar um novo usuário?
  
 <p align = "justify">
-<b>XXXX</b> - O Aluno deverá fazer login com seu email educacional, já o funcionário deve logar coorporativo.
+<b>XXXX</b> - O Aluno deverá fazer login com seu email educacional, já o funcionário deve logar com o coorporativo.
  
 ---
  

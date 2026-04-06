@@ -13,7 +13,7 @@ Uma história de usuário típica segue a estrutura:
 
 > "Como um [tipo de usuário], eu quero [ação desejada] para [objetivo/benefício]."
 
-Essa abordagem garante que o foco permaneça nas necessidades reais dos usuários, incentivando o desenvolvimento iterativo e colaborativo.
+Essa abordagem garante que o foco permaneça nas necessidades reais dos usuários, incentivando o desenvolvimento interativo e colaborativo.
 
 ---
 
