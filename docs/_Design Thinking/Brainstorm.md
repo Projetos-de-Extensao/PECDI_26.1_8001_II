@@ -22,75 +22,58 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>XXXX</b> - Deve ser uma plataforma onde qualquer pessoa possa...
+<b>XXXX</b> - Deve ser uma plataforma onde será realizado o acompanhamento e cadastramento de AAC.
 </p>
  
-<b>ZZZ</b> - A plataforma deve fornece...
+<b>ZZZ</b> - A plataforma deve fornecer sistema de registro, quantidade total, integração com calendário acadêmico, suporte para envio de comprovantes, geração automática de relatórios, entre outras funcionalidades.
  
-<b>YYYY</b> - O objetivo da aplicação é....
+<b>YYYY</b> - O objetivo da aplicação é auxiliar no presente processo para cadastro, acompanhamento e validação das AAC realizadas pelos alunos do IBMEC.
  
-<b>WWWW</b> - O principal objetivo da aplicação é a...
+<b>WWWW</b> - O principal objetivo da aplicação é a celeridade e automação do processo atual.
  
-<b>KKKK</b> - A plataforma deve gerenciar...
+<b>KKKK</b> - A plataforma deve gerenciar o envio e contabilidade de Atividades Acadêmicas Complementares (AAC)
 </p>
  
 ---
  
-### 2. Como será o processo para cadastrar um novo clientetorneio?
+### 2. Como será o processo para cadastrar um novo usuário?
  
 <p align = "justify">
-<b>XXXX</b> - O moderador deverá fazer login e...
- 
-<b>YYYY</b> - O cliente...
- 
-<b>WWWW</b> - Com o usuário logado, ele deverá...
-
-<b>ZZZZ</b> - O cliente...
- 
-<b>KKK</b> - O cliente...
+<b>XXXX</b> - O Aluno deverá fazer login com seu email educacional, já o funcionário deve logar coorporativo.
  
 ---
  
-### 3. Como será a forma de adicionar produtos?
+### 3. Como será a forma de adicionar novas Atividades?
  
 <p align = "justify">
-<b>XXXX</b> - O cliente ao cadastrar...
-</p>
- 
-<p align = "justify">
-<b>YYYYY</b> - O produto tem...
-</p>
- 
-<b>ZZZZ</b> - O produto....
- 
-<b>XXXX</b> - O produto....
+<b>XXXX</b> - O aluno deve enviar comprovantes de participação em atividades que sejam elegíveis para validação/contabilidade como AAC. ...
 
+<b>YYYYY</b> - Os funcionários devem validar a solicitação do aluno, avaliando se o pedido atende aos requisitos.
+</p>
  
 ---
  
 ### 4. Outras perguntas pertinentes ao contexto
 
 <p align = "justify">
-<b>XXXX</b> - Com a localização...
+<b>XXXX</b> - Como funcionará para o aluno? Todo formulário preenchido será validado e computado no web app.
  
-<b>YYYY</b> - O cliente...
- 
-<b>ZZZ</b> - O cliente...
+<b>YYYY</b> - Como funcionará para o funcionário? Receberá as solicitações dos alunos e fará a validação.
  
 ---
  
-### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma de adicionar do cliente adicionar os produtos ?
+### 5. "Outras perguntas pertinentes ao contexto", Como seria a forma do aluno adicionar as atividades?
 <p align = "justify">
-<b>XXX</b> - O cliente....
+<b>XXX</b> - Atividades Internas: via QR Code e preenchimento de informações.
+            Atividades Externas: via comprovação, conforme requisitos do IBMEC.
 </p>
  
-### 6. Quais informações seriam interessante para o cliente?
+### 6. Quais informações seriam interessante para o usuário?
 <p align = "justify">
-   <b>XXX</b> - Informações...
+   <b>XXX</b> - Acompanhamento de horas (Total, realizadas, restantes)
    
-   <b>ZZZZ</b> - O cliente usuário poderá acessar informações...
+   <b>ZZZZ</b> - Separação entre horas externas e internas (Cursos X Palestras)
 
-   <b>WWWWs</b> - O usuário poderá ver scouts de partidas do torneio, ver as regras dos torneios, locais e data das partidas.
    
 </p>
  
@@ -126,4 +109,4 @@ Através da aplicação da técnica, foi possível elicitar alguns dos primeiros
 ## Autor(es)
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
-| DD/MM/YYYY | 1.0 | Criação do documento | XXX XXXX, XXXX XXXX, YYY YYYY e ZZZ XXXX |
+| 05/04/26 | 1.0 | Criação do documento | Antonni Carvalho, Gabriel Caruzo e Gabriel Valle |
