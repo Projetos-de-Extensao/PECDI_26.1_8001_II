@@ -100,13 +100,11 @@ Atividades Externas: via upload de comprovação, conforme requisitos do IBMEC (
 |BS06| O sistema mostra progresso de horas em tempo real|
 |BS07| O sistema segrega horas internas e externas|
 |BS08| O sistema gera relatórios automáticos de atividades|
-|BS09| O sistema integra com calendário acadêmico|
-|BS10| O aluno visualiza histórico completo de atividades|
-|BS11| O sistema deve notificar aluno sobre status de validação|
-|BS12| O sistema deve permitir download de relatórios em PDF|
-|BS13| O funcionário pode filtrar atividades pendentes de validação|
-|BS14| O sistema deve controlar prazos de cumprimento de horas|
-|BS15| O sistema deve categorizar atividades por tipo (Cursos, Palestras, Voluntariado, etc)|
+|BS09| O aluno visualiza histórico completo de atividades|
+|BS10| O sistema deve notificar aluno sobre status de validação|
+|BS11| O funcionário pode filtrar atividades pendentes de validação|
+|BS12| O sistema deve controlar prazos de cumprimento de horas|
+|BS13| O sistema deve categorizar atividades por tipo (Cursos, Palestras, Voluntariado, etc)|
  
 ## Conclusão
 <p align = "justify">
@@ -122,3 +120,4 @@ Através da aplicação da técnica de brainstorm, foi possível elicitar os req
 | Data | Versão | Descrição | Autor(es) |
 | -- | -- | -- | -- |
 | 05/04/26 | 1.0 | Criação do documento | Antonni Carvalho, Gabriel Caruzo e Gabriel Valle |
+| 07/04/26 | 2.0 | Adicionada visão geral | Gabriel Caruzo | 
