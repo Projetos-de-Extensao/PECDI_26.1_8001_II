@@ -7,7 +7,7 @@ A análise hierárquica de tarefas (AHT) é uma técnica utilizada para decompor
 - Compreender o fluxo de trabalho dos usuários (Aluno, Avaliador, Coordenação), desde as metas gerais até as ações mais específicas.
 - Identificar possíveis dificuldades, redundâncias ou etapas desnecessárias no processo de registro e validação de AAC.
 - Apoiar o design de interfaces mais intuitivas e eficientes, alinhadas às necessidades reais dos usuários.
-- Facilitar a comunicação entre equipes de desenvolvimento, design e stakeholders, tornando claro o que precisa ser atendido pela aplicação AAC Manager.
+- Facilitar a comunicação entre equipes de desenvolvimento, design e stakeholders, tornando claro o que precisa ser atendido pela aplicação AAC sistema.
 
 ## **2. Público-Alvo (Personas)**
 
