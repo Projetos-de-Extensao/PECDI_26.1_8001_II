@@ -5,7 +5,8 @@ title: Protótipo
 ## Introdução
 
 <p align = "justify">
-A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvimento a encontrar um nível de detalhes abrangentes, extrair funcionalidades, testar usabilidade, e também fornece uma base para o gerenciamento do projeto pois com o protótipo é possível realizar estimativas de quanto tempo será necessário desempenhar em cada funcionalidade.
+A criação de um protótipo de alta fidelidade ajuda a equipe de desenvolvimento a alcançar um nível de detalhamento mais completo, identificar funcionalidades, avaliar a usabilidade e também serve como base para o gerenciamento do projeto, pois com esse protótipo é possível estimar quanto tempo será necessário para executar cada funcionalidade.
+
 </p>
 
 ## Metodologia
