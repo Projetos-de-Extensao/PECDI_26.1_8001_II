@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBMEC — Login</title>
+  <link rel="stylesheet" href="link(login).css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <div class="logo">
+        <div class="logo-box">I</div>
+        <span>IBMEC</span>
+      </div>
+
+      <h1>Entrar</h1>
+      <p class="subtitle">Acesse o portal acadêmico</p>
+
+      <form id="loginForm" novalidate>
+
+        <div class="field">
+          <label for="email">E-mail ou RA</label>
+          <input type="text" id="email" placeholder="seu.email@ibmec.edu.br" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="field">
+          <label for="password">Senha</label>
+          <div class="pass-wrapper">
+            <input type="password" id="password" placeholder="••••••••" />
+            <button type="button" id="togglePw">Mostrar</button>
+          </div>
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" id="remember" />
+            Lembrar de mim
+          </label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" id="btnLogin">Entrar</button>
+
+        <p id="feedback" class="feedback hidden"></p>
+
+      </form>
+
+      <p class="footer-text">Problemas? <a href="#">Fale com o suporte</a></p>
+
+    </div>
+  </div>
+
+  <script src="script(login).js"></script>
+</body>
+</html>
