@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dashboard AAC IBMEC - Controle de Horas" />
+  <title>Dashboard — IBMEC AAC</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+
+  <nav class="navegacao" role="navigation" aria-label="Menu principal">
+    <div class="nav-container">
+      <a href="/" class="logo-nav" aria-label="IBMEC - Início">
+        <div class="caixa-logo">I</div>
+        <span>IBMEC</span>
+      </a>
+
+      <ul class="menu-principal">
+        <li>
+          <a href="/dashboard" class="menu-link">Dashboard</a>
+        </li>
+        <li class="menu-com-submenu">
+          <button class="menu-botao" aria-expanded="false" aria-haspopup="true">
+            Solicitação <span aria-hidden="true">▼</span>
+          </button>
+          <ul class="submenu" role="menu">
+            <li role="none"><a href="/solicitacao/interna" role="menuitem">Interna</a></li>
+            <li role="none"><a href="/solicitacao/externa" role="menuitem" target="_blank">Externa</a></li>
+          </ul>
+        </li>
+        <li class="menu-com-submenu">
+          <button class="menu-botao menu-perfil-botao" aria-expanded="false" aria-haspopup="true">
+            Perfil <span aria-hidden="true">▼</span>
+          </button>
+          <ul class="submenu-perfil" role="menu">
+            <li role="none"><a href="/perfil/editar" role="menuitem">Editar Perfil</a></li>
+            <li role="none"><a href="/perfil/config" role="menuitem">Configurações</a></li>
+            <li role="none"><hr aria-hidden="true" /></li>
+            <li role="none"><a href="/logout" role="menuitem">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container-principal">
+    <section class="dashboard-container">
+      <h1 class="titulo-dashboard">AAC sistema - Seu Progresso</h1>
+
+      <!-- Card Único com Visualização Comparativa -->
+      <div class="card-principal">
+        <div class="card-header">
+          <h2 class="card-titulo-grande">Suas Horas</h2>
+          <div class="total-info">
+            <span class="total-horas">80 / 120 horas</span>
+            <span class="total-percentual">67%</span>
+          </div>
+        </div>
+
+        <!-- Barra de Progresso Geral -->
+        <div class="progresso-geral">
+          <div class="barra-progresso">
+            <div class="progresso-preenchido" style="width: 67%"></div>
+          </div>
+        </div>
+
+        <!-- Comparação Visual Internas vs Externas -->
+        <div class="horas-comparacao">
+          <!-- Horas Internas -->
+          <div class="tipo-hora interno">
+            <div class="header-tipo">
+              <h3 class="titulo-tipo">Internas</h3>
+            </div>
+            <div class="valor-tipo">50 / 60 horas</div>
+            <div class="barra-tipo">
+              <div class="preenchimento-tipo" style="width: 83%; background: linear-gradient(90deg, #F5AC00, #ffb84d);"></div>
+            </div>
+            <div class="percentual-tipo">83%</div>
+          </div>
+
+          <!-- Horas Externas -->
+          <div class="tipo-hora externo">
+            <div class="header-tipo">
+              <h3 class="titulo-tipo">Externas</h3>
+            </div>
+            <div class="valor-tipo">30 / 60 horas</div>
+            <div class="barra-tipo">
+              <div class="preenchimento-tipo" style="width: 50%; background: linear-gradient(90deg, #6366f1, #a78bfa);"></div>
+            </div>
+            <div class="percentual-tipo">50%</div>
+          </div>
+        </div>
+
+        <!-- Visualização em Pizza/Donut -->
+        <div class="visualizacao-visual">
+          <svg viewBox="0 0 100 100" class="donut-chart">
+            <!-- Fundo -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#e0e0e0" stroke-width="15"></circle>
+            
+            <!-- Interno (83% = 298.8°) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#F5AC00" stroke-width="15" 
+              stroke-dasharray="298.8 376.99" stroke-dashoffset="0"
+              stroke-linecap="round" class="arc-interno"></circle>
+            
+            <!-- Externo (50% = 188° a partir de 298.8°) -->
+            <circle cx="50" cy="50" r="40" fill="none" stroke="#6366f1" stroke-width="15" 
+              stroke-dasharray="188 376.99" stroke-dashoffset="-298.8"
+              stroke-linecap="round" class="arc-externo"></circle>
+          </svg>
+          
+          <div class="legenda-visual">
+            <div class="legenda-item">
+              <span class="legenda-cor interno"></span>
+              <span class="legenda-texto">Internas</span>
+            </div>
+            <div class="legenda-item">
+              <span class="legenda-cor externo"></span>
+              <span class="legenda-texto">Externas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botão Ver Histórico -->
+        <div class="botao-container">
+          <button class="botao-historico" aria-label="Ver histórico de horas">
+            Ver Histórico
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 IBMEC. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
