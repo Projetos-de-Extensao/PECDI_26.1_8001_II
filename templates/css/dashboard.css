@@ -327,51 +327,6 @@ body {
   border-top: 1px solid rgba(0, 37, 85, 0.1);
 }
 
-/* Botão Histórico */
-.botao-historico {
-  background: linear-gradient(135deg, var(--cor-secundaria), #003d7a);
-  color: var(--cor-texto);
-  border: 2px solid var(--cor-primaria);
-  padding: 1rem 3rem;
-  font-size: 1rem;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  transition: all var(--transicao);
-  box-shadow: 0 8px 24px rgba(245, 172, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.botao-historico::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
-}
-
-.botao-historico:hover {
-  background: linear-gradient(135deg, var(--cor-primaria), #ffb84d);
-  color: var(--cor-secundaria);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(245, 172, 0, 0.35);
-}
-
-.botao-historico:hover::before {
-  width: 300px;
-  height: 300px;
-}
-
-.botao-historico:active {
-  transform: translateY(-2px);
-}
 
 /* Footer */
 .rodape {
@@ -499,4 +454,148 @@ body {
 
 .card-principal:focus-within {
   box-shadow: 0 20px 60px rgba(245, 172, 0, 0.25);
+}
+
+/* Seção de Atividades */
+.atividades-container {
+  margin-top: 2rem;
+}
+
+.titulo-secao {
+  font-size: 1.4rem;
+  color: var(--cor-primaria);
+  margin: 0 0 1.2rem;
+  font-weight: 800;
+}
+
+/* Wrapper da tabela */
+.tabela-wrapper {
+  background: var(--cor-texto);
+  border: 1px solid var(--interno-borda);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(0, 37, 85, 0.06);
+}
+
+/* Tabela */
+.tabela-atividades {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.tabela-atividades thead {
+  background: linear-gradient(180deg, #f4f7fb 0%, #e8eef8 100%);
+  border-bottom: 2px solid var(--interno-borda);
+}
+
+.tabela-atividades th {
+  padding: 1rem 0.9rem;
+  text-align: left;
+  font-weight: 700;
+  color: var(--interno-primaria);
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tabela-atividades tbody tr {
+  border-bottom: 1px solid #f0f4fb;
+  transition: background-color 0.12s ease;
+}
+
+.tabela-atividades tbody tr:hover {
+  background-color: #fafbfc;
+}
+
+.tabela-atividades td {
+  padding: 0.95rem 0.9rem;
+  color: var(--interno-texto);
+}
+
+/* Tipo Badge */
+.tipo-badge {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  min-width: 75px;
+}
+
+.tipo-badge.interno-badge {
+  background: linear-gradient(135deg, rgba(245, 172, 0, 0.12), rgba(245, 172, 0, 0.06));
+  color: #b38600;
+  border: 1px solid rgba(245, 172, 0, 0.18);
+}
+
+.tipo-badge.externo-badge {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(99, 102, 241, 0.06));
+  color: #5a5dbf;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+/* Nome da Atividade */
+.nome-atividade {
+  font-weight: 600;
+  color: var(--interno-primaria);
+  max-width: 280px;
+}
+
+/* Data */
+.data {
+  color: #5d6c86;
+  font-size: 0.93rem;
+}
+
+/* Horas */
+.horas {
+  font-weight: 700;
+  color: var(--interno-primaria);
+  text-align: center;
+}
+
+/* Status */
+.status {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.status.aprovado {
+  color: var(--interno-sucesso);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .tabela-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabela-atividades {
+    font-size: 0.88rem;
+  }
+
+  .tabela-atividades th,
+  .tabela-atividades td {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .nome-atividade {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tipo-badge {
+    min-width: 65px;
+    font-size: 0.75rem;
+  }
 }
