@@ -1,4 +1,3 @@
-/* Dashboard - Único Card Moderno */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
@@ -42,17 +41,10 @@ body {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Título do Dashboard */
 .titulo-dashboard {
   font-size: 2.8rem;
   color: #fff;
@@ -66,7 +58,6 @@ body {
   background-clip: text;
 }
 
-/* Card Principal Único */
 .card-principal {
   background: var(--cor-card-bg);
   border-radius: 24px;
@@ -78,17 +69,10 @@ body {
 }
 
 @keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Header do Card */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -126,7 +110,6 @@ body {
   font-weight: 700;
 }
 
-/* Progresso Geral */
 .progresso-geral {
   margin-bottom: 3rem;
 }
@@ -148,7 +131,6 @@ body {
   box-shadow: 0 0 20px rgba(245, 172, 0, 0.3);
 }
 
-/* Comparação Visual Internas vs Externas */
 .horas-comparacao {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -194,23 +176,6 @@ body {
   font-weight: 700;
 }
 
-.badge-tipo {
-  font-size: 0.7rem;
-  background: linear-gradient(135deg, rgba(245, 172, 0, 0.1), rgba(245, 172, 0, 0.05));
-  color: var(--cor-primaria);
-  padding: 0.4rem 0.9rem;
-  border-radius: 20px;
-  font-weight: 600;
-  border: 1px solid rgba(245, 172, 0, 0.2);
-  white-space: nowrap;
-}
-
-.tipo-hora.externo .badge-tipo {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(99, 102, 241, 0.05));
-  color: #6366f1;
-  border-color: rgba(99, 102, 241, 0.2);
-}
-
 .valor-tipo {
   font-size: 1.5rem;
   color: var(--cor-primaria);
@@ -244,7 +209,6 @@ body {
   font-weight: 700;
 }
 
-/* Visualização em Donut */
 .visualizacao-visual {
   display: flex;
   align-items: center;
@@ -263,27 +227,17 @@ body {
   filter: drop-shadow(0 4px 12px rgba(0, 37, 85, 0.1));
 }
 
-.arc-interno,
-.arc-externo {
+.arc-interno, .arc-externo {
   transform-origin: 50px 50px;
   animation: drawArc 1s ease-out forwards;
 }
 
-.arc-interno {
-  animation-delay: 0.2s;
-}
-
-.arc-externo {
-  animation-delay: 0.4s;
-}
+.arc-interno { animation-delay: 0.2s; }
+.arc-externo { animation-delay: 0.4s; }
 
 @keyframes drawArc {
-  from {
-    stroke-dashoffset: 376.99;
-  }
-  to {
-    stroke-dashoffset: var(--offset, 0);
-  }
+  from { stroke-dashoffset: 376.99; }
+  to { stroke-dashoffset: var(--offset, 0); }
 }
 
 .legenda-visual {
@@ -318,145 +272,6 @@ body {
   font-weight: 600;
 }
 
-/* Container do Botão */
-.botao-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(0, 37, 85, 0.1);
-}
-
-
-/* Footer */
-.rodape {
-  background-color: rgba(0, 37, 85, 0.8);
-  color: var(--cor-texto);
-  text-align: center;
-  padding: 2rem;
-  margin-top: 4rem;
-  border-top: 2px solid var(--cor-primaria);
-  font-size: 0.9rem;
-  backdrop-filter: blur(10px);
-}
-
-/* Responsivo - Tablets */
-@media (max-width: 768px) {
-  .container-principal {
-    padding: 2rem 1rem;
-  }
-
-  .titulo-dashboard {
-    font-size: 2rem;
-  }
-
-  .card-principal {
-    padding: 1.5rem;
-  }
-
-  .horas-comparacao {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .visualizacao-visual {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  .donut-chart {
-    width: 150px;
-    height: 150px;
-  }
-
-  .card-header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .total-info {
-    align-items: flex-start;
-  }
-}
-
-/* Responsivo - Mobile */
-@media (max-width: 480px) {
-  .container-principal {
-    padding: 1rem;
-  }
-
-  .titulo-dashboard {
-    font-size: 1.6rem;
-  }
-
-  .card-principal {
-    padding: 1.2rem;
-  }
-
-  .card-titulo-grande {
-    font-size: 1.3rem;
-  }
-
-  .total-horas {
-    font-size: 1.3rem;
-  }
-
-  .total-percentual {
-    font-size: 1rem;
-  }
-
-  .horas-comparacao {
-    gap: 1rem;
-  }
-
-  .tipo-hora {
-    padding: 1rem;
-  }
-
-  .titulo-tipo {
-    font-size: 1rem;
-  }
-
-  .valor-tipo {
-    font-size: 1.2rem;
-  }
-
-  .visualizacao-visual {
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .donut-chart {
-    width: 120px;
-    height: 120px;
-  }
-
-  .botao-historico {
-    padding: 0.8rem 2rem;
-    font-size: 0.9rem;
-  }
-
-  .legenda-item {
-    gap: 0.6rem;
-  }
-
-  .legenda-texto {
-    font-size: 0.9rem;
-  }
-}
-
-/* Acessibilidade */
-.botao-historico:focus {
-  outline: 3px solid var(--cor-primaria);
-  outline-offset: 3px;
-}
-
-.card-principal:focus-within {
-  box-shadow: 0 20px 60px rgba(245, 172, 0, 0.25);
-}
-
-/* Seção de Atividades */
 .atividades-container {
   margin-top: 2rem;
 }
@@ -468,16 +283,14 @@ body {
   font-weight: 800;
 }
 
-/* Wrapper da tabela */
 .tabela-wrapper {
-  background: var(--cor-texto);
-  border: 1px solid var(--interno-borda);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 26px rgba(0, 37, 85, 0.06);
+  box-shadow: 0 10px 26px rgba(0, 37, 85, 0.08);
 }
 
-/* Tabela */
 .tabela-atividades {
   width: 100%;
   border-collapse: collapse;
@@ -485,35 +298,34 @@ body {
 }
 
 .tabela-atividades thead {
-  background: linear-gradient(180deg, #f4f7fb 0%, #e8eef8 100%);
-  border-bottom: 2px solid var(--interno-borda);
+  background: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .tabela-atividades th {
   padding: 1rem 0.9rem;
   text-align: left;
   font-weight: 700;
-  color: var(--interno-primaria);
+  color: var(--cor-secundaria);
   font-size: 0.85rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 .tabela-atividades tbody tr {
-  border-bottom: 1px solid #f0f4fb;
+  border-bottom: 1px solid #f0f0f0;
   transition: background-color 0.12s ease;
 }
 
 .tabela-atividades tbody tr:hover {
-  background-color: #fafbfc;
+  background-color: #fafafa;
 }
 
 .tabela-atividades td {
   padding: 0.95rem 0.9rem;
-  color: var(--interno-texto);
+  color: #333;
 }
 
-/* Tipo Badge */
 .tipo-badge {
   display: inline-block;
   padding: 0.35rem 0.65rem;
@@ -536,66 +348,74 @@ body {
   border: 1px solid rgba(99, 102, 241, 0.18);
 }
 
-/* Nome da Atividade */
 .nome-atividade {
   font-weight: 600;
-  color: var(--interno-primaria);
+  color: var(--cor-secundaria);
   max-width: 280px;
 }
 
-/* Data */
 .data {
   color: #5d6c86;
   font-size: 0.93rem;
 }
 
-/* Horas */
 .horas {
   font-weight: 700;
-  color: var(--interno-primaria);
+  color: var(--cor-secundaria);
   text-align: center;
 }
 
-/* Status */
 .status {
   font-weight: 700;
   font-size: 0.9rem;
   text-align: center;
-}
-
-.status.aprovado {
-  color: var(--interno-sucesso);
+  color: #1f8b4c;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
 }
 
-/* Responsivo */
+.rodape {
+  background-color: rgba(0, 37, 85, 0.8);
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-top: 2px solid var(--cor-primaria);
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
 @media (max-width: 768px) {
-  .tabela-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+  .container-principal { padding: 2rem 1rem; }
+  .titulo-dashboard { font-size: 2rem; }
+  .card-principal { padding: 1.5rem; }
+  .horas-comparacao { grid-template-columns: 1fr; gap: 1.5rem; }
+  .visualizacao-visual { flex-direction: column; gap: 1.5rem; padding: 1rem; }
+  .donut-chart { width: 150px; height: 150px; }
+  .card-header { flex-direction: column; gap: 1rem; }
+  .total-info { align-items: flex-start; }
+  .tabela-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tabela-atividades { font-size: 0.88rem; }
+  .tabela-atividades th, .tabela-atividades td { padding: 0.75rem 0.6rem; }
+  .nome-atividade { max-width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .tipo-badge { min-width: 65px; font-size: 0.75rem; }
+}
 
-  .tabela-atividades {
-    font-size: 0.88rem;
-  }
-
-  .tabela-atividades th,
-  .tabela-atividades td {
-    padding: 0.75rem 0.6rem;
-  }
-
-  .nome-atividade {
-    max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .tipo-badge {
-    min-width: 65px;
-    font-size: 0.75rem;
-  }
+@media (max-width: 480px) {
+  .container-principal { padding: 1rem; }
+  .titulo-dashboard { font-size: 1.6rem; }
+  .card-principal { padding: 1.2rem; }
+  .card-titulo-grande { font-size: 1.3rem; }
+  .total-horas { font-size: 1.3rem; }
+  .total-percentual { font-size: 1rem; }
+  .horas-comparacao { gap: 1rem; }
+  .tipo-hora { padding: 1rem; }
+  .titulo-tipo { font-size: 1rem; }
+  .valor-tipo { font-size: 1.2rem; }
+  .visualizacao-visual { gap: 1rem; padding: 1rem; }
+  .donut-chart { width: 120px; height: 120px; }
+  .legenda-item { gap: 0.6rem; }
+  .legenda-texto { font-size: 0.9rem; }
 }
