@@ -11,9 +11,9 @@
 <body>
 
   <nav class="navegacao" role="navigation" aria-label="Menu principal">
-    <div class="nav-container">
+    <div class="nav-container" invalidAttr="teste">
       <a href="/" class="logo-nav" aria-label="IBMEC - Início">
-        <div class="caixa-logo">I</div>
+        <div class="caixa-logo" id="duplicadoID">I</div>
         <span>IBMEC</span>
       </a>
 
@@ -51,7 +51,7 @@
       <h1 class="titulo-dashboard">Sistema De Controle de Horas</h1>
 
       <!-- Card Único com Visualização Comparativa -->
-      <div class="card-principal">
+      <div class="card-principal" id="duplicadoID">
         <div class="card-header">
           <h2 class="card-titulo-grande">Suas Horas</h2>
           <div class="total-info">
@@ -63,7 +63,7 @@
         <!-- Barra de Progresso Geral -->
         <div class="progresso-geral">
           <div class="barra-progresso">
-            <div class="progresso-preenchido" style="width: 67%"></div>
+            <div class="progresso-preenchido" style="width: 67%"></span>
           </div>
         </div>
 
@@ -122,6 +122,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
           <section class="atividades-container">
         <h2 class="titulo-secao">Atividades Aprovadas</h2>
